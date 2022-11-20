@@ -85,12 +85,12 @@ nav {
     margin-right: 50px;
 }
 
-.link:hover {
-    color: var(--primary-text-color);
+.link:hover{
+    color: var(--accent-color);
 }
 
 .link,
-.link-headline {
+.link-header {
     display: block;
     padding: 32px 0; 
 
@@ -101,11 +101,13 @@ nav {
     text-decoration: none;
     color: var(--primary-text-color); 
 }
-.link-headline:hover,
-.link-headline:focus {
+
+
+.link-header:hover,
+.link-header:focus{
     color: var(--accent-color); 
 }
-.link-headline:visited {
+.link-header:visited{
     color: #2196F3; 
 }
    
@@ -414,11 +416,8 @@ nav {
    
 }
  
-.button-all:hover {
-    border-radius: 4px;
-   
- }
-.button-all:focus {  
+
+.button-all {  
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -426,9 +425,12 @@ nav {
     text-align: center;
     border-radius: 4px;
     cursor: pointer; 
-    background-color: var(--accent-color); 
+    
+}
+.button-all:hover, 
+.button-all:focus{
+    background-color: var(--accent-color);
     color: var(--primary-white-color);
-   
 }
 
 /*list-advantage(переваги список(сервиса))*/
@@ -456,9 +458,11 @@ nav {
     display: block;
 }
 .container-filter {
+   padding-top: 20px;
    padding-right: 24px;  
    padding-bottom: 20px;
    padding-left: 20px;
+   border: 1px solid #EEEEEE;
    
 } 
 
